@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var morgan = require('morgan');
 
 var app = express();
+var index = require('./routes/index.js');
 var game  = require('./routes/game.js');
 
 //configure app
