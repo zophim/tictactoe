@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <title>[[= layout.title ]]</title>
+  </head>
+  <body>
+    <nav class="nav navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Tic Tac Toe</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="home"><a href="/">Home</a></li>
+            <li id="game"><a href="/game">Game</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="header" class="container">
+      <div class="jumbotron">
+        [[= layout.header ]]
+      </div>
+    </div>
+    <div id="section1" class="container">
+      [[= layout.section1 ]]
+    </div>
+    [[? layout.section2 ]]
+      <div id="section2" class="container">
+        [[= layout.section2 ]] 
+      </div>
+    [[?]]
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    [[? layout.script ]]
+      [[= layout.script ]]
+    [[?]]
+  </body>
+</html>

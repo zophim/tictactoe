@@ -1,0 +1,16 @@
+---
+layout: layout.dot
+title: Index Page
+---
+[[##header:
+  <h1>Tic Tac Toe</h1>
+#]]
+[[##section1:
+  
+#]]
+
+[[##script:
+  <script>
+    $('#navbar #home').addClass('active');
+  </script>
+#]]
